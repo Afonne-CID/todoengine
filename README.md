@@ -116,7 +116,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## Acknowledgements
 
-- [OpenAI](https://www.openai.com) for their help with code snippets and troubleshooting
 - [Tailwind CSS](https://tailwindcss.com) for the styling framework
 - [Django](https://www.djangoproject.com) and [Django REST framework](https://www.django-rest-framework.org) for the backend framework
 - [React](https://reactjs.org) for the frontend framework
