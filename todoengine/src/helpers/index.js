@@ -2,6 +2,7 @@
 // const tasks_api_url = '/api/tasks/'
 // const categories_api_url = '/api/categories/'
 const API_URL = import.meta.env.VITE_API_URL || '/api';
+console.log(API_URL)
 
 const isAuthenticated = () => {
     return ((localStorage.getItem('token', null) !== null) && (localStorage.getItem('token', null) !== undefined))
