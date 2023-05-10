@@ -80,6 +80,7 @@ const AuthButtons = () => {
         }
         if (data.token) {
             localStorage.setItem("token", data.token);
+            window.location.reload();
         }
         
         setIsLoading(false)
