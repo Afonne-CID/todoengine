@@ -35,71 +35,71 @@ TodoEngine is a simple, yet powerful, task management application built with Rea
 ### Installation
 
 1. Clone the repository:
-```
-    git clone https://github.com/Afonne-CID/TodoEngine.git
+```bash
+git clone https://github.com/Afonne-CID/TodoEngine.git
 ```
 
 2. Navigate to the project directory:
-```
-        cd TodoEngine
+```bash
+cd TodoEngine
 ```
 
 3. Set up the frontend:
 
    a. Navigate to the `todoengine` folder:
-   ```
-        cd todoengine
+   ```bash
+   cd todoengine
    ```
 
    b. Install the dependencies:
-   ```
-        yarn install
+   ```bash
+   yarn install
    ```
 
    c. Start the development server:
-   ```
-        yarn dev
+   ```bash
+   yarn dev
    ```
 
 4. Set up the backend:
 
    a. Navigate to the `todoengine_api` folder:
-   ```
-        cd ../todoengine_api
+   ```bash
+   cd ../todoengine_api
    ```
 
    b. Create a virtual environment and activate it:
-   ```
+   ```bash
    python -m venv venv
    source venv/bin/activate
    ```
 
    c. Install the dependencies:
-   ```
+   ```bash
    pip install -r requirements.txt
    ```
 
-   d. Create a `.env` file with the following environment variables:
-   ```
-        DJANGO_SECRET_KEY=<your_secret_key>
-        DJANGO_SECRET_KEY=<your_django_secret_key>
-        POSTGRES_DB_NAME=<your_postgres_db_name>
-        POSTGRES_USER=<your_postgres_user>
-        POSTGRES_PASSWORD=<your_postgres_password>
-        POSTGRES_HOST=<your_postgres_host>
-        POSTGRES_PORT=<your_postgres_port>
+   d. Copy the `.env.example` file to `.env` and update the environment variables:
+   ```bash
+   DJANGO_SECRET_KEY=<your_secret_key>
+   DJANGO_SECRET_KEY=<your_django_secret_key>
+   POSTGRES_DB_NAME=<your_postgres_db_name>
+   POSTGRES_USER=<your_postgres_user>
+   POSTGRES_PASSWORD=<your_postgres_password>
+   POSTGRES_HOST=<your_postgres_host>
+   POSTGRES_PORT=5432
    ```
 
 To generate a strong SECRET_KEY, use the Python command `python -c ("import secrets; print(secrets.token_hex(32)))`, then copy/paste the generate string into your **DJANGO_SECRET_KEY** value
 
    e. Apply the migrations:
-   ```
-        python manage.py migrate
+   ```bash
+   python manage.py migrate
    ```
 
    f. Start the development server:
-   ```
-        python manage.py runserver
+   ```bash
+   python manage.py runserver
    ```
 
 5. Open your browser and go to [http://localhost:8000](http://localhost:8000) to view the app. Or the right port if you changed the default port.
