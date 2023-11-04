@@ -9,7 +9,7 @@ TodoEngine is a simple, yet powerful, task management application built with Rea
 - User authentication (login, registration, and logout)
 - Task management (add, edit, and delete tasks)
 - Mobile-responsive design
-- Secure and fast API built with Django and PostgreSQL
+- Secure and fast
 
 ## Technologies
 
